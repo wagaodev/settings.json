@@ -22,24 +22,24 @@
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     }
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -100,9 +100,7 @@
     "editor.formatOnSave": true
   },
   "typescript.suggest.autoImports": true,
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
+  "terminal.integrated.env.osx": {},
   "workbench.editor.labelFormat": "short",
   "editor.fontLigatures": true,
   "emmet.includeLanguages": {
@@ -166,14 +164,14 @@
   "editor.accessibilitySupport": "off",
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   // "editor.codeActionsOnSave": {
   //   "source.fixAll.eslint": "explicit"
   // },
   "editor.semanticHighlighting.enabled": false,
   "breadcrumbs.enabled": true,
   "workbench.productIconTheme": "fluent-icons",
-  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "gitlens.codeLens.authors.enabled": false,
   "editor.tabSize": 2,
   "security.workspace.trust.untrustedFiles": "newWindow",
@@ -204,7 +202,8 @@
     "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "go": false
   },
   "[javascript][javascriptreact][typescript][typescriptreact]": {
     "editor.codeActionsOnSave": {
@@ -213,232 +212,38 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "console-ninja.featureSet": "Community",
+  "github.copilot.chat.localeOverride": "en",
+  "editor.inlayHints.fontSize": 14,
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.compositeLiteralTypes": true,
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.rangeVariableTypes": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "editor.inlayHints.padding": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  // Custom Schema Inline Hits.
+  "workbench.colorCustomizations": {
+    "editorInlayHint.background": "#5b5be2e2",
+    "editorInlayHint.foreground": "#ffffffca",
+    "editorInlayHint.parameterBackground": "#5b5be2e2",
+    "editorInlayHint.parameterForeground": "#ffffffca",
+    "editorInlayHint.typeBackground": "#5b5be2e2",
+    "editorInlayHint.typeForeground": "#ffffffca"
+  },
 }
-// Old settings.json
-// {
-//   "terminal.integrated.fontSize": 18,
-//   "workbench.iconTheme": "symbols",
-//   "workbench.startupEditor": "newUntitledFile",
-//   "editor.tabSize": 2,
-//   "editor.fontSize": 16,
-//   "editor.lineHeight": 25,
-//   "editor.fontFamily": "Cascadia Code PL",
-//   "editor.fontLigatures": true,
-//   "files.exclude": {
-//     "**/.git": true,
-//     "**/.svn": true,
-//     "**/.hg": true,
-//     "**/CVS": true,
-//     "**/.DS_Store": true,
-//     "node_modules": false,
-//     ".gitignore": false,
-//     ".gitattributes": true,
-//     ".buckconfig": true,
-//     ".flowconfig": true,
-//     "babel.config.js": false,
-//     "metro.config.js": false,
-//     "yarn.lock": false,
-//     ".watchmanconfig": true,
-//     "_tests_": true,
-//     "ios": false,
-//     "app.json": false,
-//     "package.json": false,
-//     "android": false,
-//     ".eslintrc.js": false,
-//     ".eslintrc.json": false,
-//     "jest.config.js": false,
-//     ".prettierrc.js": false,
-//     ".eslintignore": false,
-//     "prettier.config.js": false,
-//     ".expo-shared": false,
-//     "assets": false,
-//     ".expo": false,
-//     ".vscode": true,
-//     "tsconfig.json": false,
-//     ".editorconfig": false,
-//     "react-native.config.js": false,
-//     ".dart_tool": true,
-//     "web": true
-//   },
-//   // "workbench.colorCustomizations": {
-//   //   "editorBracketHighlight.foreground1": "#DA70D6",
-//   //   "editorBracketHighlight.foreground2": "#90ee90",
-//   //   "editorBracketHighlight.foreground3": "#87cefa",
-//   //   "editorBracketHighlight.foreground4": "#FF8000"
-//   // },
-//   "better-comments.tags": [
-//     {
-//       "tag": "!",
-//       "color": "#FF2D00",
-//       "strikethrough": false,
-//       "underline": false,
-//       "backgroundColor": "transparent",
-//       "bold": false,
-//       "italic": false
-//     }
-//   ],
-//   "breadcrumbs.enabled": true,
-//   "explorer.compactFolders": false,
-//   "editor.renderLineHighlight": "gutter",
-//   "workbench.editor.labelFormat": "short",
-//   "extensions.ignoreRecommendations": true,
-//   "javascript.updateImportsOnFileMove.enabled": "always",
-//   "typescript.updateImportsOnFileMove.enabled": "never",
-//   "eslint.validate": [
-//     "javascript",
-//     "javascriptreact",
-//     "html",
-//     "typescriptreact"
-//   ],
-//   "editor.parameterHints.enabled": false,
-//   "explorer.confirmDragAndDrop": false,
-//   "explorer.confirmDelete": false,
-//   "editor.rulers": [80, 120],
-//   "[javascript]": {
-//     "editor.codeActionsOnSave": {
-//       "source.fixAll.eslint": true
-//     },
-//     "editor.defaultFormatter": "esbenp.prettier-vscode"
-//   },
-//   "[javascriptreact]": {
-//     "editor.codeActionsOnSave": {
-//       "source.fixAll.eslint": true
-//     }
-//   },
-//   "[typescript]": {
-//     "editor.codeActionsOnSave": {
-//       "source.fixAll.eslint": true
-//     },
-//     "editor.defaultFormatter": "esbenp.prettier-vscode"
-//   },
-//   "[typescriptreact]": {
-//     "editor.codeActionsOnSave": {
-//       "source.fixAll.eslint": true
-//     },
-//     "editor.defaultFormatter": "esbenp.prettier-vscode"
-//   },
-//   "editor.codeActionsOnSave": {
-//     "source.fixAll.eslint": "explicit",
-//     "source.fixAll.stylelint": "explicit"
-//   },
-//   "files.associations": {
-//     ".sequelizerc": "javascript",
-//     ".stylelintrc": "json",
-//     ".prettierrc": "json"
-//   },
-//   "emmet.syntaxProfiles": {
-//     "javascript": "jsx"
-//   },
-//   "emmet.includeLanguages": {
-//     "javascript": "javascriptreact"
-//   },
-//   "eslint.codeAction.showDocumentation": {
-//     "enable": true
-//   },
-//   "gitlens.codeLens.recentChange.enabled": false,
-//   "gitlens.codeLens.authors.enabled": false,
-//   "gitlens.codeLens.enabled": false,
-//   "git.enableSmartCommit": true,
-//   "liveshare.featureSet": "insiders",
-//   "typescript.tsserver.log": "off",
-//   "javascript.suggest.autoImports": true,
-//   "typescript.suggest.autoImports": true,
-//   "liveServer.settings.donotShowInfoMsg": true,
-//   "material-icon-theme.folders.associations": {
-//     "infra": "app",
-//     "entities": "class",
-//     "schemas": "class",
-//     "typeorm": "database",
-//     "repositories": "mappings",
-//     "http": "container",
-//     "migrations": "tools",
-//     "modules": "components",
-//     "implementations": "core",
-//     "dtos": "typescript",
-//     "fakes": "mock",
-//     "websockets": "pipe",
-//     "protos": "pipe",
-//     "grpc": "pipe",
-//     "ormconfig.json": "database",
-//     "tsconfig.json": "tune",
-//     "*.proto": "3d",
-//     "reducers": "Redux-reducer",
-//     "actions": "Resource",
-//     "assets": "Upload",
-//     "Home": "React-components",
-//     "Login": "React-components",
-//     "SignIn": "React-components",
-//     "SignUp": "React-components",
-//     "Dashboard": "React-components",
-//     "Profile": "React-components",
-//     "Search": "React-components",
-//     "Appointments": "React-components",
-//     "Favorites": "React-components",
-//     "components": "Components",
-//     "data": "Mock",
-//     "store": "Archive",
-//     "context": "Generator",
-//     "contexts": "Generator",
-//     "Preload": "Update",
-//     "constants": "Less",
-//     "redux": "Redux-store"
-//   },
-//   "[prisma]": {
-//     "editor.formatOnSave": true
-//   },
-//   "workbench.colorTheme": "oh-lucy",
-//   "editor.minimap.enabled": false,
-//   "window.menuBarVisibility": "toggle",
-//   "git.confirmSync": true,
-//   "color-highlight.languages": ["*"],
-//   "settingsSync.ignoredSettings": [],
-//   "editor.suggestSelection": "first",
-//   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-//   "git.autofetch": true,
-//   "[json]": {
-//     "editor.defaultFormatter": "esbenp.prettier-vscode"
-//   },
-//   "json.maxItemsComputed": 150000,
-//   "createReactTSXComponent.useArrowFunctionComponent": true,
-//   "createReactTSXComponent.useReactFC": true,
-//   "createReactTSXComponent.useReactImport": true,
-//   "[dart]": {
-//     "editor.formatOnSave": true,
-//     "editor.formatOnType": true,
-//     "editor.rulers": [80],
-//     "editor.selectionHighlight": false,
-//     "editor.suggest.snippetsPreventQuickSuggestions": false,
-//     "editor.suggestSelection": "first",
-//     "editor.tabCompletion": "onlySnippets",
-//     "editor.wordBasedSuggestions": "off"
-//   },
-//   "redhat.telemetry.enabled": true,
-//   "security.workspace.trust.untrustedFiles": "open",
-//   "editor.inlineSuggest.enabled": true,
-//   "symbols.hidesExplorerArrows": false,
-//   "terminal.integrated.env.osx": {},
-//   "console-ninja.featureSet": "Community",
-//   "workbench.productIconTheme": "fluent-icons",
-//   "console-ninja.captureFunctions": true,
-//   "terminal.integrated.env.windows": {},
-//   "editor.formatOnSave": true,
-//   "eslint.codeActionsOnSave.rules": null,
-//   "terminal.integrated.env.linux": {},
-//   "[jsonc]": {
-//     "editor.defaultFormatter": "esbenp.prettier-vscode"
-//   },
-//   "workbench.sideBar.location": "right",
-//   "github.copilot.enable": {
-//     "*": false,
-//     "plaintext": false,
-//     "markdown": false,
-//     "scminput": false
-//   },
-//   "git.openRepositoryInParentFolders": "always",
-//   "[javascript][javascriptreact][typescript][typescriptreact]": {
-//     "editor.codeActionsOnSave": {
-//       "source.fixAll.eslint": "explicit"
-//     }
-//   }
-// }
